@@ -1,0 +1,16 @@
+﻿@model FileViewModel
+
+
+<div class="add">
+    <div class="add-text">
+        Fill out the form to add your picture
+    </div>
+
+    <h3>Выберите файл для загрузки</h3>
+
+    <form asp-action="AddFile" asp-controller="Home" method="post" enctype="multipart/form-data">
+        <input type="file" name="File" /><br>
+        <p><input type="submit" value="Загрузить" /></p>
+    </form>
+</div>
+
